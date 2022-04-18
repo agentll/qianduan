@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+    /* height 设为3000px， 方便滚动 */
+    /* height: 3000px; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table; 
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+   
+.header {
+    height: 60px;
+    margin:  auto;
+    display: block ;
+    /* 必须写出auto，因为会将 .w 中margin层叠掉 */
+}
+
+.logo {
+    
+    float: left;
+    margin: 19px;
+    margin-right: 1rem;
+    margin-left: 240px;
+
+
+}
+.logo img {
+    display: block;
+    float: left;
+    width: 107px;
+    height: 22px;
+
+}
+.nav {
+    float: left;
+    margin: 19px ;
+    margin-left: 40px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 ;
+    line-height: 22px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.tiaozhan{
+    float: left;
+    margin: 10px;
+}
+.tiaozhan img {
+    display: block;
+    float: left;
+    width: 115px;
+    height: 40px;
+
+}
+
+.search {
+    float: left;
+    width: 232px;
+    height: 32px;
+    background-color: #bfbfbf;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.search input {
+    float: left;
+    width: 165px;
+    height: px;
+    border: 1px solid #c2c2c2;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+    
+    line-height: 30px;
+}
+
+.search button {
+    /* 不加浮动会有缝隙，导致按钮装不下，进而会掉下来 */
+    float: left;
+    width: 50px;
+    height: 27px;
+
+    /* 按钮 button 默认有个边框，需要我们手动去掉 */
+    border: none;
+    background: url(images/btn.svg) no-repeat;
+}
+
+.user {
+    float: right;
+    line-height: 40px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+    max-width: 115px;
+    vertical-align: middle;
+}
+
+
