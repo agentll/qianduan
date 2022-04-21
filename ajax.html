@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- localhost:8088 -->
+    <title></title>
+  </head>
+  <body>
+    <div id="banner">
+     
+    </div>
+    <ul id="goods">
+ 
+    </ul>
+ 
+    <script type="text/javascript" src="./ajax.js"></script>
+    <script type="text/javascript">
+
+
+
+      ajax('get','./test.json',true,function(res){
+        document.getElementById("banner").innerHTML = res.msg;
+      });
+      
+      ajax('get','./test2.json',true,function(res){
+        var datas = res.datas;
+        var str = "";
+        for(var i=0;i<datas.length;i++){
+          document.getElementById("goods").innerHTML += `<li>
+                <img src="${datas[i].imgPath}" >
+                <span>${datas[i].name}</span>
+              </li>`;
+        }
+      });
+      
+   
+      
+    </script>
+  </body>
+</html>
+
+      
+    </script>
+  </body>
+</html>
