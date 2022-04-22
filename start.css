@@ -79,45 +79,60 @@ a {
     height: 40px;
 
 }
-
-.search {
+.nav-item {
     float: left;
-    width: 232px;
-    height: 32px;
-    background-color: #bfbfbf;
-    margin-left: 70px;
-    margin-top: 15px;
+    margin: 19px ;
+    margin-left: 21%;
 }
 
-.search input {
+.nav-item ul li {
     float: left;
-    width: 165px;
-    height: px;
-    border: 1px solid #c2c2c2;
-    border-right: none;
-    color: #bfbfbf;
-    font-size: 14px;
-    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.nav-item ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 ;
+    line-height: 22px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.nav-item ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.container{
+    float: left;
+    margin-left: 10% ;
+    margin-right: 10%;
+
+    height: 5000px;
+    width: 960px;
+}
+.content{
+    float: left;
+    background-color: #8ab3ca;
+    width: 60%;
+}
+
+.content ul li div{
     
-    line-height: 30px;
+    height: 150px;
 }
-
-.search button {
-    float: left;
-    width: 50px;
-    height: 27px;
-    border: none;
-    background: url(images/btn.svg) no-repeat;
-}
-
-.user {
+.content ul li div img {
+    display: block;
     float: right;
-    line-height: 40px;
-    margin-right: 10px;
-    font-size: 14px;
-    color: #666;
-    max-width: 115px;
-    vertical-align: middle;
+    width: 120px;
+    height: 80px;
+
 }
-
-
+.right{
+    float: right;
+    background-color: #3e6d89;
+    width: 38%;
+}
+.right ul li div{
+    height: 150px;
+}
